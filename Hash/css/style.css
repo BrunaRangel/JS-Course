@@ -1,0 +1,130 @@
+body {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+    color:#FFF;
+    text-align:center;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    color:#FFF;
+    font-size: 3rem;
+}
+
+/* botões */
+
+#buttons-container button {
+    padding: 10px 15px;
+    margin: 0 10px;
+    border: none;
+    background-color: #ADD8E6;
+    font-size: 1.2rem;
+}
+
+/* jogo */
+
+#container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.box {
+    flex: 1 1 33%;
+    height: 100px;
+    border: 5px solid #FFF;
+    box-sizing: border-box;
+}
+
+#block-1, #block-2, #block-3 {
+    border-top: none;
+}
+
+#block-1, #block-4, #block-7 {
+    border-left: none;
+}
+
+#block-7, #block-8, #block-9 {
+    border-bottom: none;
+}
+
+#block-3, #block-6, #block-9 {
+    border-right: none;
+}
+
+.x {
+    display: inline-block;
+    color: #FFD700;
+    font-size: 4.0625rem;
+    line-height: 100px;
+}
+
+.o {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-top: 17px;
+    border: 5px solid #00BFFF;
+    border-radius: 50%;
+}
+
+/* classe de esconder */
+
+.hide {
+    display: none !important;
+}
+
+/* placar */
+
+#scoreboard-container {
+    position: relative;
+    margin: 30px auto 0;
+    font-weight: bold;
+    font-size: 1.5625rem;
+}
+
+h2 {
+    color:#FFF;
+}
+
+.score-box {
+    margin: 0 20px;
+}
+
+#x-scoreboard {
+    margin-right: 3px;
+    color:#FFD700;
+}
+
+#o-scoreboard {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 3px;
+    border: 2px solid #00BFFF;
+    border-radius: 50%;
+}
+
+/* mensagem de vitória */
+
+#message p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 150px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #ADD8E6;
+    color: #000;
+    font-size: 50px;
+}
